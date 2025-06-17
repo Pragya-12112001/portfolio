@@ -1,0 +1,109 @@
+.home {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home .text {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.home .text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.home .special-heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--main-heading-color);
+  font-family: "Protest Guerrilla", sans-serif;
+  line-height: 1;
+}
+
+.home .tagline {
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.home .tagline span {
+  color: red;
+}
+
+.home .amoeba-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  animation: morph 10s infinite;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Section */
+.home .buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home .cta-button {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home .cta-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Amoeba animation */
+@keyframes morph {
+  0% { border-radius: 50%; transform: scale(1); }
+  25% { border-radius: 60% 40% 60% 40%; transform: scale(1.05); }
+  50% { border-radius: 50% 60% 40% 70%; transform: scale(0.97); }
+  75% { border-radius: 40% 70% 30% 60%; transform: scale(1.02); }
+  100% { border-radius: 50%; transform: scale(1); }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .home .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home .special-heading {
+    font-size: 16vw;
+  }
+
+  .home .amoeba-container img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+

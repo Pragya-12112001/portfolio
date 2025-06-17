@@ -1,0 +1,78 @@
+.experience-section {
+  background: linear-gradient(120deg, #f9fafc, #eef1f8);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.experience-heading {
+  font-size: 3rem;
+  color: var(--main-heading-color);
+  margin-bottom: 2rem;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.experience-top {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.3rem;
+}
+
+.experience-company {
+  font-weight: normal;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.experience-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.experience-description {
+  color: #374151;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-tech li {
+  background: #dbeafe;
+  color: #1e3a8a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}

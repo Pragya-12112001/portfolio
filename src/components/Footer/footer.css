@@ -1,0 +1,136 @@
+.footer {
+  position: relative;
+  background: var(--dark);
+  color: var(--primary-color);
+  padding: 5rem 1.5rem 3rem;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+/* Watermark */
+.footer-watermark {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-family: 'Protest Guerrilla', sans-serif;
+  color: rgba(255, 152, 116, 0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Wavy top divider */
+.footer-wave-divider {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg"><path fill="%239DBDFF" fill-opacity="1" d="M0,0L48,10.7C96,21,192,43,288,53.3C384,64,480,64,576,58.7C672,53,768,43,864,48C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/></svg>') no-repeat center;
+  background-size: cover;
+  z-index: 3;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 4;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-title {
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 2.3rem;
+  color: var(--main-heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+  font-family: 'Sankofa Display', serif;
+  font-size: 1.2rem;
+  color: var(--pink-text-color);
+  margin-bottom: 2rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: var(--main-heading-color);
+  transform: scale(1.4);
+  box-shadow: 0 0 15px var(--main-heading-color);
+}
+
+/* Float animation */
+.float {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.footer-note {
+  font-family: 'Spicy Rice', cursive;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+}
+
+/* Glowing blur layer */
+.blur-bg {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 350px;
+  height: 350px;
+  background: var(--main-heading-color);
+  opacity: 0.15;
+  filter: blur(90px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-title {
+    font-size: 1.8rem;
+  }
+  .footer-subtitle {
+    font-size: 1rem;
+  }
+  .footer-icon {
+    font-size: 1.7rem;
+  }
+  .footer-watermark {
+    font-size: 4rem;
+  }
+}

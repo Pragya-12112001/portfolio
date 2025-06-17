@@ -1,0 +1,116 @@
+.projects-section {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.projects-heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--main-heading-color, #1f2937);
+  font-family: "Protest Guerrilla", sans-serif;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.projects-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 0 2rem;
+  justify-items: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  max-width: 360px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.project-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.project-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tech-list li {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.project-links {
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.github-link {
+  color: #181717;
+  font-size: 1.5rem;
+}
+
+.project-links a:hover {
+  opacity: 0.85;
+}

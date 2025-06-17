@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&family=Spicy+Rice&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+:root{
+  --primary-color: #9DBDFF;
+  --secondary-color: #7695FF;
+  --main-heading-color: #FF9874;
+  --pink-text-color: #F38181;
+  --dark: #343131; 
+  --navbar-bg: #ffffffe3;
+  --glass-blur: blur(10px);
+  --nav-hover-color: #f38181;
+}
+ 

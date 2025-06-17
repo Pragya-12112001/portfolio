@@ -1,0 +1,125 @@
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Protest Guerrilla', cursive;
+  color: #333;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 2.8rem;
+  color: #ff9744;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff9744;
+  box-shadow: 0 0 8px rgba(255,151,68,0.5);
+}
+
+.error {
+  color: #d33;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.submit-btn {
+  background: #ff9744;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(255,151,68,0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e06e0d;
+  transform: translateY(-3px);
+}
+
+.success-msg {
+  margin-top: 1rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.contact-info {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-info h3 {
+  color: #ff9744;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #ff9744;
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons a {
+  color: #ff9744;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e06e0d;
+}
