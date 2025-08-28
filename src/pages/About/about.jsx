@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Me from "../../assets/pragya.jpeg";
+import Me from "../../assets/pragya_samadhiya.webp";
+// import Me from "../../assets/pragya.jpeg";
 import "./about.css";
 import { FaHandPeace, FaRocket, FaUserGraduate, FaLaptopCode, FaPalette  } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
@@ -24,13 +25,14 @@ export const About = () => {
             Frontend Developer • UI/UX Designer • Creative Coder
           </p>
           <p>
-            Based in Raipur, with roots in Orai (U.P.), I transform ideas into
-            digital experiences — fast, accessible, and user-focused.
+            I enjoy turning ideas into digital experiences that are fast, responsive, 
+            and easy to use.
           </p>
           <p>
-            Whether it's animation, accessibility, or aesthetics — I strive for
-            pixel perfection in every line of code.
+            From interactive animations to accessible, well-structured interfaces, 
+            I strive to build solutions that blend creativity with clean code.
           </p>
+
         </div>
       </div>
 
@@ -51,24 +53,26 @@ export const About = () => {
           <div className="timeline-card left">
             <h3><FaUserGraduate className="about-icon"/> Engineering Degree</h3>
             <p>
-              Graduated from CSVTU with a growing interest in frontend
-              development and visual design.
+              Graduated in Computer Science and Engineering from BIT Raipur with
+              a strong foundation in frontend development, UI/UX, and software testing.
             </p>
           </div>
           <div className="timeline-dot"></div>
           <div className="timeline-card right">
-            <h3><FaLaptopCode  className="about-icon"/> Internship at Skill Chase</h3>
+            <h3><FaLaptopCode className="about-icon"/> Internship at Skill Chase</h3>
             <p>
-              Built real-world interfaces and practiced clean code & UI
-              consistency.
+              Led a team of 4 to recreate complex web layouts with pixel-perfect
+              accuracy, implemented Git workflows, and improved delivery speed
+              through efficient sprint planning.
             </p>
           </div>
           <div className="timeline-dot"></div>
           <div className="timeline-card left">
-            <h3><FaPalette  className="about-icon"/> UI/UX at Ushma Infotech</h3>
+            <h3><FaPalette className="about-icon"/> UI Designer at Ushma Infotech</h3>
             <p>
-              Designing and developing polished digital experiences for small
-              businesses — fully remote.
+              Designed and developed polished digital experiences for small
+              businesses, improved UI engagement by 30%, and contributed to
+              responsive, user-friendly web solutions.
             </p>
           </div>
         </div>
